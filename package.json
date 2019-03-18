@@ -1,0 +1,65 @@
+{
+  "name": "canteen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "eslint": "eslint ./ -c ./eslint.json 'src/**/*'",
+    "flint": "eslint --fix -p ./ -c ./eslint.json 'src/**/*.js' 'src/**/*.jsx'",
+    "start": "webpack-dev-server --mode development --inline"
+  },
+  "pre-commit": [
+    "eslint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/preloadteam/canteen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preloadteam/canteen/issues"
+  },
+  "homepage": "./",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.11.0",
+    "eslint-config-google": "^0.9.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "imagemin": "^6.1.0",
+    "img-loader": "^3.0.1",
+    "node-sass": "^4.9.4",
+    "pre-commit": "^1.2.2",
+    "react-hot-loader": "^4.3.11",
+    "resolve-url-loader": "^3.0.1",
+    "sass-loader": "^7.1.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.85.0",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "dependencies": {
+    "bem-cn": "^3.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.2.1",
+    "redux-thunk": "^2.2.0"
+  }
+}

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
-import { AppPaths } from '../constants';
-import MainPage from '../components/MainPage/index';
+import { AppPaths } from '../constants/HttpConstants.js';
+import MainPage from '../components/MainPage/index.jsx';
 
 import 'semantic-ui-css/semantic.min.css';
 
